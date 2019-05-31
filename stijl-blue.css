@@ -1,0 +1,436 @@
+body {
+	font-family: helvetica;
+}
+
+#home {
+  background-color: white;
+	background-image: url(afb/background2.jpeg);
+	background-position: -20rem -27rem;
+	background-size: 1600px;
+	background-repeat: no-repeat;
+  font-family: helvetica;
+  transition: background-position 1s;
+}
+
+header {
+	display: grid;
+	grid-template-columns: 20vw 70vw;
+	padding: 2.5rem;
+}
+
+#initials {
+	font-size: 3rem;
+	color: #414C62;
+	text-decoration: none;
+	font-weight: 900;
+}
+
+#initials:hover {
+  color: white;
+}
+
+#home #initials:hover {
+	color: white;
+}
+
+header nav {
+	text-align: right;
+	padding-top: 0.6rem;
+}
+
+header nav a {
+	text-decoration: none;
+	text-align: center;
+	font-weight: 900;
+	padding-left: 2rem;
+  color: black;
+  font-size: 1.5rem;
+}
+
+header nav a {
+  color: white;
+}
+
+header nav a:hover {
+	color: #414C62;
+	text-decoration: underline;
+	padding-bottom: 1rem;
+}
+
+header nav a:hover {
+  color: #414C62;
+}
+
+h1 {
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 5rem;
+	color: black;
+	padding-top: 7rem;
+	font-weight: 900;
+	line-height: 7rem;
+}
+
+#home h1 {
+	color: white;
+}
+
+span {
+	color: #414C62;
+}
+
+#seeMyWork {
+	background-color: grey;
+	color: white;
+	width: 25rem;
+	font-size: 2rem;
+	font-weight: 500;
+	text-transform: uppercase;
+	display: block;
+	margin-left: auto;
+	margin-top: 4rem;
+	margin-right: auto;
+	border: none;
+	border-radius: 4rem;
+	text-align: center;
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+	text-decoration: none;
+	transition: 0.5s;
+}
+
+#seeMyWork:hover {
+	transform: scale(1.1);
+}
+
+footer {
+	font-size: 1.3rem;
+	position: fixed;
+	left: 2rem;
+	bottom: 4rem;
+}
+
+#lightAndDark {
+	font-size: 1.5rem;
+}
+
+
+footer nav a:nth-child(1) {
+  color: white;
+  background-color: grey;
+	border-radius: 4rem;
+	font-weight: 600;
+}
+
+footer nav a:nth-child(2) {
+  color: #414C62;
+  background-color: white;
+	border-radius: 4rem;
+	font-weight: 600;
+}
+
+footer nav a {
+  padding: 1.5rem;
+  margin-right: 1rem;
+  text-decoration: none;
+  color: white;
+}
+
+footer nav a:nth-child(1):hover {
+	color: white;
+	text-decoration: none;
+	padding: 1.35rem;
+	border: 0.2rem dashed white;
+}
+
+footer nav a:nth-child(2):hover {
+	color: #414C62;
+	text-decoration: none;
+	border: none;
+	padding: 1.5rem;
+}
+
+
+
+
+
+#loader-wrapper {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	z-index: 1000;
+}
+
+#loader {
+	display: block;
+	position: relative;
+	width: 150px;
+	height: 150px;
+	top: 40vh;
+	margin-left: auto;
+	margin-right: auto;
+	z-index: 101;
+
+	border: 3px solid transparent;
+	border-top-color: #414C62;
+	border-radius: 50%;
+
+	animation: spin 2s infinite;
+	animation-timing-function: linear;
+}
+
+#loader:before {
+	content: "";
+	position: absolute;
+	left: 5px;
+	top: 5px;
+	right: 5px;
+	bottom: 5px;
+
+	border: 3px dotted transparent;
+	border-top-color: red;
+	border-radius: 50%;
+
+	animation: spin 3s infinite;
+	animation-timing-function: linear;
+}
+
+#loader:after {
+	content: "";
+	position: absolute;
+	left: 15px;
+	top: 15px;
+	right: 15px;
+	bottom: 15px;
+
+	border: 3px solid transparent;
+	border-top-color: white;
+	border-radius: 50%;
+
+	animation: spin 1.5s infinite;
+	animation-timing-function: linear;
+}
+
+@keyframes spin {
+	0% {transform: rotate(0deg);}
+	100% {transform: rotate(360deg);}
+}
+
+.loader-section {
+	position: fixed;
+	top: 0;
+	width: 51%;
+	height: 100%;
+	background-color: grey;
+	z-index: 100;
+}
+
+.section-left {
+	left: 0;
+}
+
+.section-right {
+	right: 0;
+}
+
+.loaded .section-left {
+	transform: translateX(-100%);
+	transition: all 0.7s 0.3s cubic-bezier(0.6, 0.04, 0.5, 1.0);
+}
+
+.loaded .section-right {
+	transform: translateX(100%);
+	transition: all 0.7s 0.3s cubic-bezier(0.6, 0.04, 0.5, 1.0);
+}
+
+.loaded #loader {
+	opacity: 0;
+	transition: all 0.3s ease-out;
+}
+
+.loaded #loader-wrapper {
+	visibility: hidden;
+	transform: translateY(-100%);
+	transition: all 0.3s 1s ease-out;
+}
+
+
+
+
+
+
+
+
+/* WORK.HTML */
+
+#work {
+	background-color: lightgrey;
+}
+
+#work header nav a {
+  color: grey;
+}
+
+#work header nav a:hover {
+  color: #414C62;
+}
+
+#work main {
+	background-color: lightgrey;
+  border-top: 5px solid white;
+	padding-top: 4rem;
+	margin-bottom: 4rem;
+}
+
+#work .afbeeldingen {
+	columns: 1;
+	margin-top: 4rem;
+}
+
+#work img {
+	display: block;
+	width: 80vw;
+	max-width: 40rem;
+	margin-left: auto;
+	margin-bottom: 4rem;
+	margin-right: auto;
+	border: 1px solid grey;
+}
+
+#work footer {
+  position: relative;
+  background-color: #414C62;
+  height: 1.5rem;
+  left: 0;
+  bottom: 0;
+}
+
+#work #lightAndDark {
+  display: block;
+  position: relative;
+  margin-left: 2rem;
+  margin-bottom: 4rem;
+}
+
+
+
+
+
+/* BUTTONS IN WORK.HTML*/
+
+h2 {
+	text-align: center;
+	font-size: 4rem;
+  text-transform: uppercase;
+  font-weight: 900;
+  color: #414C62;
+}
+
+#work .buttons {
+	margin-top: 4rem;
+	text-align: center;
+	font-size: 1.5rem;
+  line-height: 6rem;
+}
+
+#work .buttons a {
+	color: white;
+  background-color: grey;
+	border-radius: 4rem;
+	text-decoration: none;
+	padding: 1.5rem;
+  margin-right: 1rem;
+
+}
+
+#work .buttons a:hover {
+	color: #414C62;
+	background-color: white;
+	padding: 1.35rem;
+	border: 0.2rem dashed #414C62;
+}
+
+.geselecteerdeButton {
+	border: 3px dashed white;
+}
+
+.displayNone {
+	opacity: 0.25;
+	filter: grayscale(1);
+}
+
+
+
+
+
+/* BUTTONS VOOR ABOUT.HTML */
+
+h3 {
+	font-size: 4rem;
+	text-transform: uppercase;
+	font-weight: 900;
+	color: #414C62;
+	margin-bottom: 2rem;
+  text-align: center;
+}
+
+
+.uitleg {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 600px;
+	padding-left: 4rem;
+	padding-right: 4rem;
+	font-size: 1.65rem;
+}
+
+p {
+	margin-bottom: 2rem;
+	line-height: 2.7rem;
+	text-align: center;
+	color: #252028;
+  margin-left: auto;
+  margin-right: auto;
+  width: 300px;
+}
+
+ul {
+  line-height: 2.2rem;
+  margin-left: auto;
+	margin-right: auto;
+	width: 300px;
+  color: #252028;
+}
+
+strong {
+  color: #414C62;
+}
+
+
+
+
+
+
+
+
+
+@media (min-width: 850px) {
+	#work .afbeeldingen {
+		columns: 2;
+	}
+}
+
+@media (min-width: 900px) {
+  #home {
+    background-position: -3rem -27rem;
+    transition: background-position 1s;
+  }
+}
+
+@media (min-width: 1300px) {
+	#work .afbeeldingen {
+		columns: 3;
+	}
+}
