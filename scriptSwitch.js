@@ -12,3 +12,18 @@ function switchToBlue() {
 
 redLink.addEventListener("click",switchToRed);
 blueLink.addEventListener("click",switchToBlue);
+
+let loaderWrapper = document.getElementById('loader-wrapper');
+let loader = document.getElementById('loader');
+let i = 0;
+
+let verwijderLoadingScreen = function(){
+	while (i < 1) {
+		loaderWrapper.classList.add('loaded');
+		loader.classList.add('loaded');
+		i++;
+		console.log('Loader is uit beeld!');
+	}
+}
+
+setInterval(verwijderLoadingScreen, 1000);
