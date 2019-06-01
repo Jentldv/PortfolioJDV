@@ -314,6 +314,97 @@ footer nav a:nth-child(2):hover {
   margin-bottom: 4rem;
 }
 
+#camper, #surfers, #jewels, #guitar {
+	width: 80vw;
+	max-width: 40rem;
+	height: 80vw;
+	max-height: 40rem;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 4rem;
+	border: 1px solid grey;
+}
+
+#camper {
+	background-image: url(afb/camper_1.png);
+	background-position: center;
+	background-size: cover;
+}
+
+#camper:hover {
+	background-image: url(afb/camper_2.png);
+}
+
+#surfers {
+	background-image: url(afb/surfers_1.png);
+	background-position: center;
+	background-size: cover;
+}
+
+#surfers:hover {
+	background-image: url(afb/surfers_2.png);
+}
+
+#jewels {
+	background-image: url(afb/jewels_1.png);
+	background-position: center;
+	background-size: cover;
+}
+
+#jewels:hover {
+	background-image: url(afb/jewels_2.png);
+}
+
+#blueBreeze, #logoShaka, #quickBrownFoxie {
+	width: 80vw;
+	max-width: 40rem;
+	height: 60vw;
+	max-height: 30rem;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 4rem;
+	border: 1px solid grey;
+}
+
+#blueBreeze {
+	background-image: url(afb/mockup_1.jpg);
+	background-position: center;
+	background-size: cover;
+}
+
+#blueBreeze:hover {
+	background-image: url(afb/mockup_2.jpg);
+}
+
+#guitar {
+	background-color: white;
+	background-image: url(afb/pb1_6.png);
+	background-position: center;
+	background-size: cover;
+}
+
+#logoShaka {
+	height: 50vw;
+	max-height: 20rem;
+	background-color: white;
+	background-image: url(afb/op2_4.png);
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+#quickBrownFoxie {
+	height: 100vw;
+	max-height: 60rem;
+	background-image: url(afb/pb1_4.png);
+	background-position: center;
+	background-size: cover;
+}
+
+#quickBrownFoxie:hover {
+	background-image: url(afb/pb1_3.png);
+}
+
 
 
 
@@ -365,7 +456,7 @@ h2 {
 
 
 
-/* BUTTONS VOOR ABOUT.HTML */
+/* ABOUT.HTML */
 
 h3 {
 	font-size: 4rem;
