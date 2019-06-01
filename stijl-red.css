@@ -99,55 +99,8 @@ span {
 
 #seeMyWork:hover {
 	transform: scale(1.1);
+	filter: brightness(120%);
 }
-
-footer {
-	font-size: 1.3rem;
-	position: fixed;
-	left: 2rem;
-	bottom: 4rem;
-}
-
-#lightAndDark {
-	font-size: 1.5rem;
-}
-
-
-footer nav a:nth-child(2) {
-  color: white;
-  background-color: grey;
-	border-radius: 4rem;
-	font-weight: 600;
-}
-
-footer nav a:nth-child(1) {
-  color: red;
-  background-color: white;
-	border-radius: 4rem;
-	font-weight: 600;
-}
-
-footer nav a {
-  padding: 1.5rem;
-  margin-right: 1rem;
-  text-decoration: none;
-  color: white;
-}
-
-footer nav a:nth-child(2):hover {
-	color: white;
-	text-decoration: none;
-	padding: 1.35rem;
-	border: 0.2rem dashed white;
-}
-
-footer nav a:nth-child(1):hover {
-	color: red;
-	text-decoration: none;
-	border: none;
-	padding: 1.5rem;
-}
-
 
 
 
@@ -501,11 +454,119 @@ strong {
 }
 
 
+/* FOOTER */
+footer {
+	font-size: 1.3rem;
+	position: fixed;
+	left: 2rem;
+	bottom: 4rem;
+}
+
+#lightAndDark {
+	font-size: 1.5rem;
+}
 
 
+footer nav a:nth-child(2) {
+  color: white;
+  background-color: grey;
+	border-radius: 4rem;
+	font-weight: 600;
+}
+
+footer nav a:nth-child(1) {
+  color: red;
+  background-color: white;
+	border-radius: 4rem;
+	font-weight: 600;
+}
+
+footer nav a {
+  padding: 1.5rem;
+  margin-right: 1rem;
+  text-decoration: none;
+  color: white;
+}
+
+footer nav a:nth-child(2):hover {
+	color: white;
+	text-decoration: none;
+	padding: 1.35rem;
+	border: 0.2rem dashed white;
+}
+
+footer nav a:nth-child(1):hover {
+	color: red;
+	text-decoration: none;
+	border: none;
+	padding: 1.5rem;
+}
+
+/* CONTACT IN WORK.HTML */
+footer #logoLinkedIn {
+	width: 40px;
+	height: 40px;
+	border: none;
+	display: inline;
+	transition: 0.5s;
+	margin-left: 1rem;
+	margin-right: 1rem;
+}
+
+footer #logoFaceBook {
+	width: 40px;
+	height: 40px;
+	border: none;
+	display: inline;
+	transition: 0.5s;
+	margin-left: 1rem;
+	margin-right: 1rem;
+}
+
+footer #logoInsta {
+	width: 40px;
+	height: 40px;
+	border: none;
+	display: inline;
+	transition: 0.5s;
+	margin-left: 1rem;
+	margin-right: 1rem;
+}
+
+footer #logoMail {
+	width: 40px;
+	height: 40px;
+	border: none;
+	display: inline;
+	transition: 0.5s;
+	margin-left: 1rem;
+	margin-right: 1rem;
+}
+
+#logoLinkedIn:hover {
+	transform: scale(1.2);
+	filter: brightness(120%);
+}
+
+#logoFaceBook:hover {
+	transform: scale(1.2);
+	filter: brightness(120%);
+}
+
+#logoInsta:hover {
+	transform: scale(1.2);
+	filter: brightness(120%);
+}
+
+#logoMail:hover {
+	transform: scale(1.2);
+	filter: brightness(120%);
+}
 
 
-
+.contact {
+	text-align: center;
+}
 
 
 
