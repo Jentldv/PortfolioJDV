@@ -27,3 +27,16 @@ let verwijderLoadingScreen = function(){
 }
 
 setInterval(verwijderLoadingScreen, 1000);
+
+
+
+let verwijderElementen = function(){
+	while (i < 2) {
+		loader.parentNode.removeChild(loader);
+		loaderWrapper.parentNode.removeChild(loaderWrapper);
+		console.log('Loader is verwijderd!');
+		i++;
+	}
+}
+
+setInterval(verwijderElementen, 2000);
