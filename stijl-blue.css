@@ -360,6 +360,28 @@ span {
 	background-image: url(afb/pb1_3.png);
 }
 
+#pb {
+	margin-top: 5rem;
+	border-top: 15px solid #414C62;
+	padding-top: 5rem;
+}
+
+#magazine {
+	margin-top: 3rem;
+}
+
+#videos {
+	margin-top: 5rem;
+	border-top: 15px solid #414C62;
+	padding-top: 5rem;
+	margin-bottom: 7rem;
+}
+
+#videoShaka {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
 
 
 
@@ -577,6 +599,27 @@ footer #logoMail {
 	#work .afbeeldingen {
 		columns: 2;
 	}
+
+	#magazine {
+		height: 500px;
+	}
+
+	#rgr {
+		height: 300px;
+	}
+
+	#pb {
+		column-span: all;
+	}
+
+	#gd {
+		column-span: all;
+	}
+
+	#videoShaka {
+		width: 640px;
+		height: 480px;
+	}
 }
 
 @media (min-width: 900px) {
@@ -589,5 +632,26 @@ footer #logoMail {
 @media (min-width: 1300px) {
 	#work .afbeeldingen {
 		columns: 3;
+	}
+
+	#magazine {
+		height: 700px;
+	}
+
+	#rgr {
+		height: 500px;
+	}
+
+	#pb {
+		column-span: all;
+	}
+
+	#gd {
+		column-span: all;
+	}
+
+	#videoShaka {
+		width: 960px;
+		height: 620px;
 	}
 }
